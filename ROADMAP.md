@@ -8,16 +8,19 @@
 - Bundel 3 P0 SECURITY: signing key roteren, `.jks.backup` uit history
 
 ### iOS
-- **Fase 0 — Skeleton (klaar 2026-05-29):** repo + docs + Xcode-project-skeleton zonder code
-- **Fase 1 — Architectuur-onderzoek:** target-mapping uitwerken in `ARCHITECTURE.md`, OPEN-1 (ringtone-set) onderzoeken
-- **Fase 2 — Minimum viable downloader:** Spotify-playlist lezen + tracks downloaden + lokale lijst
+- **Fase 0 — Skeleton (klaar 2026-05-29):** repo + docs + SwiftPM-skeleton zonder code
+- **Fase 1 — Architectuur-onderzoek + vastlegging-gates:** OPEN-1/5/6 onderzoeks-docs (`docs/ringtone-set-research.md`, `persistence-choice.md`, `background-rotation.md`) + verplichte vastleggings-docs (`docs/PRINCIPLES.md`, `docs/DEPENDENCIES.md`, `docs/USER_JOURNEYS.md`). `ARCHITECTURE.md` verfijnen, sanitycheck herhalen (doel 90%+).
+- **Fase 2 — Minimum viable downloader:** Spotify-playlist lezen + tracks downloaden + lokale lijst. Eerst Mac met Xcode regelen. Bij eerste view ook `DESIGN_TOKENS.md` + `docs/screens/` aanmaken.
 - **Fase 3 — Ringtone-set integratie:** afhankelijk van OPEN-1 uitkomst (eigen tones-app, GarageBand-export, Shortcuts, alarm-pivot)
-- **Fase 4 — Polish + distributie:** TestFlight of AltStore-route
+- **Fase 4 — Polish + distributie:** TestFlight of AltStore-route; CHANGELOG.md losweken van RELEASES.md
 
-### Ecosysteem
-- OPEN-2: licentiekeuze (AGPL-3.0 lijkt logisch, consistent met andere iCt Horse repos)
-- OPEN-3: codenaam-pool iOS
-- D1 documentatie-portal uitbreiden met iOS-tabblad zodra code-base substantieel is
+### Ecosysteem (Meta_RandomRingtone) — vastlegging-gates fase 1
+Uit sanitycheck 29-5 — gaten op conceptueel-technisch en logisch-technisch niveau:
+- [ ] **`docs/PRINCIPLES.md`** aanmaken — waarom dit ecosysteem-pattern (sub-master + platform-repos), waarom geen monorepo, waarom PhotoVerify-precedent
+- [ ] **`docs/DEPENDENCIES.md`** aanmaken — cross-repo dependencies (Logger-backend ↔ Android, gedeelde Y2Mate-proxy ↔ Android+iOS), oorzaak-gevolg matrix
+- [ ] OPEN-2 licentiekeuze (AGPL-3.0 lijkt logisch, consistent met andere iCt Horse repos)
+- [ ] OPEN-3 codenaam-pool iOS
+- [ ] D1 documentatie-portal uitbreiden met iOS-tabblad zodra code-base substantieel is
 
 ## Middellange termijn (Q4 2026)
 
