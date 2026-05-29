@@ -4,8 +4,8 @@ slug: ios-port-bootstrap
 ecosystem: RandomRingtone
 platforms: [iOS, Android, Meta]
 type: newp
-status: in_progress
-resume: false
+status: done
+resume: ""
 ---
 
 # Sessie 2026-05-29 — iOS-port bootstrap
